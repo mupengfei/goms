@@ -30,7 +30,7 @@ func StartServer(port string) {
 	//	go echoHandler(&conns, messages)
 	var i int = 0
 	for {
-		//		log.Info("Listening ...")
+		log.Info("Listening ...")
 		conn, err := l.Accept()
 		checkError(err, "Accept")
 		//		log.Info("Accepting ...")

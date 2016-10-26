@@ -52,11 +52,8 @@ func main() {
 		}(i)
 	}
 	go colConNum(channel)
+	select {}
 	Println("END")
-	for {
-		i := 2
-		i++
-	}
 }
 
 func colConNum(channel chan int) {
